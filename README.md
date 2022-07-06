@@ -1,5 +1,5 @@
 # maven-compiler-plugin-issue-reproduction
-Simple reproduction case to show the highly unintuitive unexpected dependency resolution of `annotationProcessorPaths`.
+Minimal reproduction case to show the highly unintuitive dependency resolution of the annotation processor classpath.
 
 To see the issue, checkout the repository and run the following command:
 `mvn clean install -X | grep -oP '\-processorpath \S+' | xargs -d: -l1`
