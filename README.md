@@ -1,8 +1,8 @@
 # maven-compiler-plugin-issue-reproduction
-Simple reproduction case for an issue with the `annotationProcessorPaths` and Maven profiles.
+Simple reproduction case to show the highly unintuitive unexpected dependency resolution of `annotationProcessorPaths`.
 
-To see the issue, run the following command:
-`mvn clean install -Pguava -X | grep -oP '\-processorpath \S+' | xargs -d: -l1`
+To see the issue, checkout the repository and run the following command:
+`mvn clean install -X | grep -oP '\-processorpath \S+' | xargs -d: -l1`
 
 To see how this behaved before `maven-compiler-plugin` version `3.9.0`, go to `example/pom.xml` and change the version from `3.9.0` to `3.8.1`.
 Re-run the command and compare the output.
