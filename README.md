@@ -9,7 +9,7 @@ Re-run the command and compare the output.
 
 ### Output
 
-This is the output of `maven-compiler-plugin` version `3.9.0`:
+This is the output of the previously mentioned command when using `maven-compiler-plugin` version `3.9.0`:
 
 >  -processorpath /home/rick/.m2/repository/com/google/auto/service/auto-service/1.0/auto-service-1.0.jar
 /home/rick/.m2/repository/com/google/auto/service/auto-service-annotations/1.0/auto-service-annotations-1.0.jar
@@ -26,7 +26,7 @@ This is the output of `maven-compiler-plugin` version `3.9.0`:
 /home/rick/.m2/repository/com/google/errorprone/error_prone_annotations/2.7.1/error_prone_annotations-2.7.1.jar
 
 
-This is the output of `maven-compiler-plugin` version `3.8.1`:
+This is the output when using `maven-compiler-plugin` version `3.8.1`:
 
 > -processorpath /home/rick/.m2/repository/com/google/auto/service/auto-service/1.0/auto-service-1.0.jar
 /home/rick/.m2/repository/com/google/guava/guava/31.0.1-jre/guava-31.0.1-jre.jar
