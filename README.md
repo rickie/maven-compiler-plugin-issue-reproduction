@@ -4,7 +4,7 @@ Simple reproduction case to show the highly unintuitive unexpected dependency re
 To see the issue, checkout the repository and run the following command:
 `mvn clean install -X | grep -oP '\-processorpath \S+' | xargs -d: -l1`
 
-To see how this behaved before `maven-compiler-plugin` version `3.9.0`, go to `example/pom.xml` and change the version from `3.9.0` to `3.8.1`.
+To see how this behaves in `maven-compiler-plugin` version < `3.9.0`, go to the `pom.xml` and change the version from `3.9.0` to `3.8.1`.
 Re-run the command and compare the output.
 
 ### Output
@@ -38,4 +38,3 @@ This is the output when using `maven-compiler-plugin` version `3.8.1`:
 /home/rick/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar
 /home/rick/.m2/repository/com/google/auto/service/auto-service-annotations/1.0/auto-service-annotations-1.0.jar
 /home/rick/.m2/repository/com/google/auto/auto-common/1.0/auto-common-1.0.jar
-
